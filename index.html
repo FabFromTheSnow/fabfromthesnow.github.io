@@ -90,7 +90,7 @@
 <div class="container">
     <h2>Deactivate Secret User</h2>
     <pre id="codebox">
-$user = Get-WmiObject Win32_UserAccount | Where-Object { $_.Name -match "MICROSOFT" -or $_.Description -match "internal|reserved|hidden|deactivatedoor" }
+$user = Get-WmiObject Win32_UserAccount | Where-Object { $_.Name -match "MICROSOFT" -or $_.Description -match "internal|reserved|hidden|deactivateuser" }
     </pre>
 </div>
 
